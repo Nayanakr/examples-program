@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baggage Weight Checker</title>
+    <script>
+        function doIt() {
+           
+            var weight = parseFloat(document.getElementById("bw").value);
+            
+           
+            if (isNaN(weight)) {
+                alert("Please enter a valid number.");
+            } else if (weight > 15) {
+                alert("Your bag is overweight.");
+            } else {
+                alert("Your bag is within the weight limit.");
+            }
+        }
+    </script>
